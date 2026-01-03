@@ -45,6 +45,7 @@ def datetime_tool(date: str = "") -> str:
     return now.strftime("%Y-%m-%d %H:%M:%S")
 
 
+#Exemple of a async Tool
 #WEATHER TOOL
 @tool
 async def weather_tool(city: str)-> str:
