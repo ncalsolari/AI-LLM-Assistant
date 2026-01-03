@@ -61,11 +61,12 @@ Install the project dependencies:
 pip install -r requirements.txt
 ```
 
-### 3. Run the Application
+### 3. Move to `src` folder and run the Application
 
 Execute the `app.py` file:
 
 ```bash
+cd src
 python app.py
 ```
  
