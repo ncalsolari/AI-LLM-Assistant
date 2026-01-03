@@ -1,4 +1,4 @@
-# AI Assistant with Tools
+# LLM AI Assistant
 
 ## Description
 
@@ -90,7 +90,7 @@ Examples of inputs that will not use the tools:
 
 The program's logic works as illustrated in the diagram below:
 
-![alt text](link "Logical Diagram")
+![alt text](https://github.com/ncalsolari/AI-LLM-Assistant/blob/main/misc/LLM-AI%20Agents.drawio.png "Logical Diagram")
 
 Based on the user's input, the program analyzes whether to use a tool or not. For each tool, the cases in which it should be used were described and exemplified.
 
@@ -99,18 +99,15 @@ Based on the user's input, the program analyzes whether to use a tool or not. Fo
 
 During this challenge, the main learning was about integrating LLMs with tools and agents using the LangChain framework, understanding the differences between direct LLM responses and responses with external tools.
 
-It is impressive the potential that this approach has. Equipping LLMs with efficient and established tools (such as weather APIs, pricing APIs, email APIs, etc.) transforms them from simple prediction models into systems capable of decision making and action, opening the way for building robust and automated applications.
+It is impressive the potential that this approach has. Equipping LLMs with efficient and established tools (such as weather APIs, pricing APIs, email APIs, etc.) transforms them from "simple" prediction models into systems capable of decision making and action, opening the way for building robust and automated applications.
 
-It was also important to understand the limitations and challenges of this application. More complex inputs (such as equations involving square roots, logarithms, and exponentiation) or indirect requests (e.g., "what is the log of 6 base 10") may not be interpreted correctly, causing the tool to not be triggered.
+It was also important to understand the limitations and challenges of this application. More complex inputs (such as equations involving square roots, logarithms, and exponentiation) or indirect requests (e.g., "what is the log of 6 base ten") may not be interpreted correctly, causing the tool to not be triggered.
 
 With more time, it would be possible to improve these fine-tuning aspects, for example:
 
--Enhance mathematical expression recognition using more robust regex patterns.
-
--Restrict functions from the math library more safely.
-
--Implement new tools (e.g., email sending).
-
--Add additional features to existing tools (e.g., set alarms based on the current time).
+- Enhance mathematical expression recognition using more robust regex patterns.
+- Restrict functions from the math library more safely.
+- Implement new tools (e.g., email sending).
+- Add additional features to existing tools (e.g., set alarms based on the current time).
 
 The potential for modifying and expanding AI assistants is enormous, and their application areas are virtually unlimited.
