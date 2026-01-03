@@ -1,11 +1,15 @@
 from dotenv import load_dotenv
 from agent import create_agent
+import asyncio
+import os
 
 load_dotenv()
 
-def main():
-    agent = create_agent()
+async def main():
+    
 
+    agent = create_agent()
+    os.system('cls' if os.name == 'nt' else 'clear') #clean the CLI
     print("Assistant started (type 'exit' to close)\n")
 
     while True:
@@ -16,9 +20,9 @@ def main():
             break
 
         print("Agent: ", end="", flush=True)
-        response = agent.invoke({"input": user_input})
+        response = await agent.ainvoke({"input": user_input})
         print(response["output"])
         print()
 
 if __name__ == "__main__":
-    main()
+    asyncio.run(main())
