@@ -2,7 +2,7 @@
 
 ## Description
 
-This project implements an AI assistant using an **OpenAI GPT-3.5 model**, integrated with **external tools** via LangChain Agents.  
+This project implements an AI assistant using an **OpenAI gpt-4o-mini model**, integrated with **external tools** via LangChain Agents.  
 The agent dynamically decides **when to respond on its own** and **when to trigger a tool**.
 
 The currently available tools are:
