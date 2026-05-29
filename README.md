@@ -15,7 +15,7 @@ The currently available tools are:
 
 ## Solution Architecture
 
-- **LLM:** OpenAI GPT-3.5 Turbo  
+- **LLM:** OpenAI gpt-4o-mini  
 - **Framework:** LangChain (Agents + Tools)  
 - **Tools:** Calculator, DateTime, Weather  
 - **Interface:** Command Line Interface (CLI)  
@@ -35,6 +35,7 @@ The `src` folder contains files organized into three packages: `app`, `agent`, a
 
 ## Setup and Execution
 
+
 ### 1. Configure the `.env`
 
 After cloning the repository, create a `.env` file in the project's root folder with:
@@ -45,14 +46,16 @@ After cloning the repository, create a `.env` file in the project's root folder 
 # OPEAI API Key
 OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxx
 ```
+*On Windows go to On Windows go to src/dist and run the app.exe
 
 ### 2. Virtual Environment
 
-Create a virtual environment using Python 3.9:
+Create a virtual environment using Python 3.12:
 
 ```bash
-python3.9 -m venv .venv
+python3.12 -m venv .venv
 source .venv/bin/activate
+pip install --upgrade pip setuptools wheel
 ```
 
 Install the project dependencies:
